@@ -1,0 +1,576 @@
+[
+  {
+    "type": "AsyncClass",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "AsyncOutput",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "AsyncClass",
+          "named": true
+        },
+        {
+          "type": "Result",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "AsyncRecord",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ExecAsyncOutput",
+          "named": true
+        },
+        {
+          "type": "NotifyAsyncOutput",
+          "named": true
+        },
+        {
+          "type": "StatusAsyncOutput",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "CString",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "CStringEscapeSequence",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ConsoleStreamOutput",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "CString",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Const",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "CString",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ExecAsyncOutput",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "AsyncOutput",
+          "named": true
+        },
+        {
+          "type": "Token",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "List",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "Result",
+          "named": true
+        },
+        {
+          "type": "Value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "LogStreamOutput",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "CString",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "NotifyAsyncOutput",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "AsyncOutput",
+          "named": true
+        },
+        {
+          "type": "Token",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "OutOfBandRecord",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "AsyncRecord",
+          "named": true
+        },
+        {
+          "type": "StreamRecord",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Output",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "OutOfBandRecord",
+          "named": true
+        },
+        {
+          "type": "ResultRecord",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Result",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Value",
+          "named": true
+        },
+        {
+          "type": "Variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ResultClass",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "ResultRecord",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Result",
+          "named": true
+        },
+        {
+          "type": "ResultClass",
+          "named": true
+        },
+        {
+          "type": "Token",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "StatusAsyncOutput",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "AsyncOutput",
+          "named": true
+        },
+        {
+          "type": "Token",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Stream",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "Output",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "StreamRecord",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ConsoleStreamOutput",
+          "named": true
+        },
+        {
+          "type": "LogStreamOutput",
+          "named": true
+        },
+        {
+          "type": "TargetStreamOutput",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "TargetStreamOutput",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "CString",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Tuple",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "Result",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Value",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "Const",
+          "named": true
+        },
+        {
+          "type": "List",
+          "named": true
+        },
+        {
+          "type": "Tuple",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "Variable",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "Identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\n",
+    "named": false
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "&",
+    "named": false
+  },
+  {
+    "type": "(gdb)",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": "+",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "@",
+    "named": false
+  },
+  {
+    "type": "CStringEscapeSequence",
+    "named": true
+  },
+  {
+    "type": "Identifier",
+    "named": true
+  },
+  {
+    "type": "L\"",
+    "named": false
+  },
+  {
+    "type": "Token",
+    "named": true
+  },
+  {
+    "type": "U\"",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "[]",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "^",
+    "named": false
+  },
+  {
+    "type": "breakpoint-created",
+    "named": false
+  },
+  {
+    "type": "breakpoint-deleted",
+    "named": false
+  },
+  {
+    "type": "breakpoint-modified",
+    "named": false
+  },
+  {
+    "type": "cmd-param-changed",
+    "named": false
+  },
+  {
+    "type": "connected",
+    "named": false
+  },
+  {
+    "type": "done",
+    "named": false
+  },
+  {
+    "type": "error",
+    "named": false
+  },
+  {
+    "type": "exit",
+    "named": false
+  },
+  {
+    "type": "library-loaded",
+    "named": false
+  },
+  {
+    "type": "library-unloaded",
+    "named": false
+  },
+  {
+    "type": "memory-changed",
+    "named": false
+  },
+  {
+    "type": "record-started",
+    "named": false
+  },
+  {
+    "type": "record-stopped",
+    "named": false
+  },
+  {
+    "type": "running",
+    "named": false
+  },
+  {
+    "type": "stopped",
+    "named": false
+  },
+  {
+    "type": "thread-created",
+    "named": false
+  },
+  {
+    "type": "thread-exited",
+    "named": false
+  },
+  {
+    "type": "thread-group-added",
+    "named": false
+  },
+  {
+    "type": "thread-group-exited",
+    "named": false
+  },
+  {
+    "type": "thread-group-removed",
+    "named": false
+  },
+  {
+    "type": "thread-group-started",
+    "named": false
+  },
+  {
+    "type": "thread-selected",
+    "named": false
+  },
+  {
+    "type": "traceframe-changed",
+    "named": false
+  },
+  {
+    "type": "tsv-created",
+    "named": false
+  },
+  {
+    "type": "tsv-deleted",
+    "named": false
+  },
+  {
+    "type": "tsv-modified",
+    "named": false
+  },
+  {
+    "type": "u\"",
+    "named": false
+  },
+  {
+    "type": "u8\"",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "{}",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  },
+  {
+    "type": "~",
+    "named": false
+  }
+]

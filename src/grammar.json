@@ -1,0 +1,727 @@
+{
+  "name": "gdbmi",
+  "rules": {
+    "Stream": {
+      "type": "PREC_LEFT",
+      "value": 1,
+      "content": {
+        "type": "REPEAT1",
+        "content": {
+          "type": "SYMBOL",
+          "name": "Output"
+        }
+      }
+    },
+    "Output": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "OutOfBandRecord"
+          }
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "SYMBOL",
+                  "name": "ResultRecord"
+                },
+                {
+                  "type": "REPEAT",
+                  "content": {
+                    "type": "SYMBOL",
+                    "name": "OutOfBandRecord"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "CHOICE",
+              "members": [
+                {
+                  "type": "SYMBOL",
+                  "name": "ResultRecord"
+                },
+                {
+                  "type": "BLANK"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "(gdb)"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "STRING",
+          "value": "\n"
+        }
+      ]
+    },
+    "ResultRecord": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "Token"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "STRING",
+          "value": "^"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "ResultClass"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SEQ",
+            "members": [
+              {
+                "type": "STRING",
+                "value": ","
+              },
+              {
+                "type": "SYMBOL",
+                "name": "Result"
+              }
+            ]
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "\n"
+        }
+      ]
+    },
+    "OutOfBandRecord": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "AsyncRecord"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "StreamRecord"
+        }
+      ]
+    },
+    "AsyncRecord": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "ExecAsyncOutput"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "StatusAsyncOutput"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "NotifyAsyncOutput"
+        }
+      ]
+    },
+    "ExecAsyncOutput": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "Token"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "STRING",
+          "value": "*"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "AsyncOutput"
+        },
+        {
+          "type": "STRING",
+          "value": "\n"
+        }
+      ]
+    },
+    "StatusAsyncOutput": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "Token"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "STRING",
+          "value": "+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "AsyncOutput"
+        },
+        {
+          "type": "STRING",
+          "value": "\n"
+        }
+      ]
+    },
+    "NotifyAsyncOutput": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "Token"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "STRING",
+          "value": "="
+        },
+        {
+          "type": "SYMBOL",
+          "name": "AsyncOutput"
+        },
+        {
+          "type": "STRING",
+          "value": "\n"
+        }
+      ]
+    },
+    "AsyncOutput": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "AsyncClass"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SEQ",
+            "members": [
+              {
+                "type": "STRING",
+                "value": ","
+              },
+              {
+                "type": "SYMBOL",
+                "name": "Result"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "ResultClass": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "done"
+        },
+        {
+          "type": "STRING",
+          "value": "running"
+        },
+        {
+          "type": "STRING",
+          "value": "connected"
+        },
+        {
+          "type": "STRING",
+          "value": "error"
+        },
+        {
+          "type": "STRING",
+          "value": "exit"
+        }
+      ]
+    },
+    "AsyncClass": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "stopped"
+        },
+        {
+          "type": "STRING",
+          "value": "breakpoint-created"
+        },
+        {
+          "type": "STRING",
+          "value": "breakpoint-deleted"
+        },
+        {
+          "type": "STRING",
+          "value": "breakpoint-modified"
+        },
+        {
+          "type": "STRING",
+          "value": "cmd-param-changed"
+        },
+        {
+          "type": "STRING",
+          "value": "library-loaded"
+        },
+        {
+          "type": "STRING",
+          "value": "library-unloaded"
+        },
+        {
+          "type": "STRING",
+          "value": "memory-changed"
+        },
+        {
+          "type": "STRING",
+          "value": "record-started"
+        },
+        {
+          "type": "STRING",
+          "value": "record-stopped"
+        },
+        {
+          "type": "STRING",
+          "value": "running"
+        },
+        {
+          "type": "STRING",
+          "value": "thread-created"
+        },
+        {
+          "type": "STRING",
+          "value": "thread-exited"
+        },
+        {
+          "type": "STRING",
+          "value": "thread-group-added"
+        },
+        {
+          "type": "STRING",
+          "value": "thread-group-exited"
+        },
+        {
+          "type": "STRING",
+          "value": "thread-group-removed"
+        },
+        {
+          "type": "STRING",
+          "value": "thread-group-started"
+        },
+        {
+          "type": "STRING",
+          "value": "thread-selected"
+        },
+        {
+          "type": "STRING",
+          "value": "traceframe-changed"
+        },
+        {
+          "type": "STRING",
+          "value": "tsv-created"
+        },
+        {
+          "type": "STRING",
+          "value": "tsv-deleted"
+        },
+        {
+          "type": "STRING",
+          "value": "tsv-modified"
+        }
+      ]
+    },
+    "Result": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "Variable"
+        },
+        {
+          "type": "STRING",
+          "value": "="
+        },
+        {
+          "type": "SYMBOL",
+          "name": "Value"
+        }
+      ]
+    },
+    "Value": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "Const"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "Tuple"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "List"
+        }
+      ]
+    },
+    "Tuple": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "{}"
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "{"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "Result"
+            },
+            {
+              "type": "REPEAT",
+              "content": {
+                "type": "SEQ",
+                "members": [
+                  {
+                    "type": "STRING",
+                    "value": ","
+                  },
+                  {
+                    "type": "SYMBOL",
+                    "name": "Result"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "STRING",
+              "value": "}"
+            }
+          ]
+        }
+      ]
+    },
+    "List": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "[]"
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "["
+            },
+            {
+              "type": "SYMBOL",
+              "name": "Value"
+            },
+            {
+              "type": "REPEAT",
+              "content": {
+                "type": "SEQ",
+                "members": [
+                  {
+                    "type": "STRING",
+                    "value": ","
+                  },
+                  {
+                    "type": "SYMBOL",
+                    "name": "Value"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "STRING",
+              "value": "]"
+            }
+          ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "["
+            },
+            {
+              "type": "SYMBOL",
+              "name": "Result"
+            },
+            {
+              "type": "REPEAT",
+              "content": {
+                "type": "SEQ",
+                "members": [
+                  {
+                    "type": "STRING",
+                    "value": ","
+                  },
+                  {
+                    "type": "SYMBOL",
+                    "name": "Result"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "STRING",
+              "value": "]"
+            }
+          ]
+        }
+      ]
+    },
+    "Variable": {
+      "type": "SYMBOL",
+      "name": "Identifier"
+    },
+    "Const": {
+      "type": "SYMBOL",
+      "name": "CString"
+    },
+    "StreamRecord": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "ConsoleStreamOutput"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "TargetStreamOutput"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "LogStreamOutput"
+        }
+      ]
+    },
+    "ConsoleStreamOutput": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "~"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "CString"
+        },
+        {
+          "type": "STRING",
+          "value": "\n"
+        }
+      ]
+    },
+    "TargetStreamOutput": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "@"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "CString"
+        },
+        {
+          "type": "STRING",
+          "value": "\n"
+        }
+      ]
+    },
+    "LogStreamOutput": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "&"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "CString"
+        },
+        {
+          "type": "STRING",
+          "value": "\n"
+        }
+      ]
+    },
+    "Token": {
+      "type": "PATTERN",
+      "value": "\\d+"
+    },
+    "Identifier": {
+      "type": "PATTERN",
+      "value": "[a-zA-Z0-9_-]+"
+    },
+    "CString": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "L\""
+            },
+            {
+              "type": "STRING",
+              "value": "u\""
+            },
+            {
+              "type": "STRING",
+              "value": "U\""
+            },
+            {
+              "type": "STRING",
+              "value": "u8\""
+            },
+            {
+              "type": "STRING",
+              "value": "\""
+            }
+          ]
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "IMMEDIATE_TOKEN",
+                "content": {
+                  "type": "PREC",
+                  "value": 1,
+                  "content": {
+                    "type": "PATTERN",
+                    "value": "[^\\\\\"\\n]+"
+                  }
+                }
+              },
+              {
+                "type": "SYMBOL",
+                "name": "CStringEscapeSequence"
+              }
+            ]
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "\""
+        }
+      ]
+    },
+    "CStringEscapeSequence": {
+      "type": "TOKEN",
+      "content": {
+        "type": "PREC",
+        "value": 1,
+        "content": {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "\\"
+            },
+            {
+              "type": "CHOICE",
+              "members": [
+                {
+                  "type": "PATTERN",
+                  "value": "[^xuU]"
+                },
+                {
+                  "type": "PATTERN",
+                  "value": "\\d{2,3}"
+                },
+                {
+                  "type": "PATTERN",
+                  "value": "x[0-9a-fA-F]{2,}"
+                },
+                {
+                  "type": "PATTERN",
+                  "value": "u[0-9a-fA-F]{4}"
+                },
+                {
+                  "type": "PATTERN",
+                  "value": "U[0-9a-fA-F]{8}"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "extras": [
+    {
+      "type": "PATTERN",
+      "value": "\\s"
+    }
+  ],
+  "conflicts": [],
+  "precedences": [],
+  "externals": [],
+  "inline": [],
+  "supertypes": []
+}
+
