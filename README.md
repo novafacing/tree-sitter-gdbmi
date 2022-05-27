@@ -5,10 +5,31 @@ This repo defines the GDB/MI grammar exactly as given in the
 for use in GDB/MI clients. 
 
 The original grammar is copied to [docs/GRAMMAR.md](docs/GRAMMAR.md) and there are some
-caveats documented in [docs/ASYNC_CLASSES.md](docs/ASYNC_CLASSES.md).
+caveats documented in [docs/ASYNC_CLASSES.md](docs/ASYNC_CLASSES.md). Other caveats are
+documented below:
+
+## Caveats and Errata
+
+1. Toplevel
 
 The grammar is defined with a toplevel `Stream` entrypoint instead of over a single
 output as in the original grammar. Of course, a single output is a valid stream.
+
+2. Stray Records
+
+In real GDB/MI output, it is possible to receive an async record (specifically a
+`*stopped` or `*running` record) *after* receiving a sync record but *before*
+`display_mi_prompt` is called or `mi_on_resume_1` completes. This is inconsistent with
+the grammar given in the documentation, but it happens anyway. This parser accounts
+for this by allowing zero or more `OutOfBandRecord`s to follow the `ResultRecord` for a
+given `Output`. While not technically correct, this is necessary.
+
+3. `(gdb)` after final record
+
+The `(gdb)` prompt will not be printed after a `quit` is issued. This is easy to program
+around, and the parser will work without issue. It will have a `MISSING` syntax inserted
+into the tree however, so be aware or just detect that `quit` is being run and insert
+the token yourself.
 
 ## Using The Parser
 
