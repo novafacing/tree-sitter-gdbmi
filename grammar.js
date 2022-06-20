@@ -75,14 +75,11 @@ module.exports = grammar({
         CString: ($) =>
             seq(
                 choice('L"', 'u"', 'U"', 'u8"', '"'),
-                repeat(
-                    choice(
-                        token.immediate(prec(1, /[^\\"\n]+/)),
-                        $.CStringEscapeSequence,
-                    ),
-                ),
+                repeat(choice($.CStringCharacterSequence, $.CStringEscapeSequence)),
                 '"',
             ),
+        CStringCharacterSequence: ($) => token.immediate(prec(1, /[^\\"\n]+/)),
+
         CStringEscapeSequence: ($) =>
             token(
                 prec(

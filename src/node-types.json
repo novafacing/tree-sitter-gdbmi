@@ -55,6 +55,10 @@
       "required": false,
       "types": [
         {
+          "type": "CStringCharacterSequence",
+          "named": true
+        },
+        {
           "type": "CStringEscapeSequence",
           "named": true
         }
@@ -408,6 +412,10 @@
   {
     "type": "@",
     "named": false
+  },
+  {
+    "type": "CStringCharacterSequence",
+    "named": true
   },
   {
     "type": "CStringEscapeSequence",

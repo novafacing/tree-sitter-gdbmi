@@ -160,54 +160,66 @@ Test
                 (Identifier))
               (Value
                 (Const
-                  (CString))))))))
-    (OutOfBandRecord
-      (StreamRecord
-        (LogStreamOutput
-          (CString
-            (CStringEscapeSequence)))))
-    (OutOfBandRecord
-      (StreamRecord
-        (LogStreamOutput
-          (CString
-            (CStringEscapeSequence)))))
-    (OutOfBandRecord
-      (StreamRecord
-        (LogStreamOutput
-          (CString
-            (CStringEscapeSequence)))))
+                  (CString
+                    (CStringCharacterSequence)))))))))
     (OutOfBandRecord
       (StreamRecord
         (LogStreamOutput
           (CString
             (CStringEscapeSequence)
+            (CStringCharacterSequence)))))
+    (OutOfBandRecord
+      (StreamRecord
+        (LogStreamOutput
+          (CString
+            (CStringCharacterSequence)
+            (CStringEscapeSequence)))))
+    (OutOfBandRecord
+      (StreamRecord
+        (LogStreamOutput
+          (CString
+            (CStringCharacterSequence)
+            (CStringEscapeSequence)))))
+    (OutOfBandRecord
+      (StreamRecord
+        (LogStreamOutput
+          (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)
+            (CStringCharacterSequence)
+            (CStringEscapeSequence)
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (LogStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (LogStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (LogStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence))))))
   (Output
     (OutOfBandRecord
       (StreamRecord
         (LogStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (AsyncRecord
@@ -219,13 +231,15 @@ Test
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))))))
+                  (CString
+                    (CStringCharacterSequence)))))))))
     (ResultRecord
       (ResultClass)))
   (Output
@@ -233,13 +247,17 @@ Test
       (StreamRecord
         (LogStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (LogStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)
+            (CStringCharacterSequence)
             (CStringEscapeSequence)
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (ResultRecord
       (ResultClass)
@@ -249,13 +267,17 @@ Test
         (Value
           (Const
             (CString
+              (CStringCharacterSequence)
               (CStringEscapeSequence)
-              (CStringEscapeSequence)))))))
+              (CStringCharacterSequence)
+              (CStringEscapeSequence)
+              (CStringCharacterSequence)))))))
   (Output
     (OutOfBandRecord
       (StreamRecord
         (LogStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (AsyncRecord
@@ -267,13 +289,15 @@ Test
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))))))
+                  (CString
+                    (CStringCharacterSequence)))))))))
     (ResultRecord
       (ResultClass)))
   (Output
@@ -281,16 +305,19 @@ Test
       (StreamRecord
         (LogStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (ResultRecord
       (ResultClass)))
@@ -299,277 +326,332 @@ Test
       (StreamRecord
         (LogStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
             (CStringEscapeSequence)
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (ResultRecord
       (ResultClass)))
@@ -586,37 +668,43 @@ Test
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
@@ -624,19 +712,22 @@ Test
                 (List
                   (Value
                     (Const
-                      (CString))))))
+                      (CString
+                        (CStringCharacterSequence)))))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString)))))))))
+                  (CString
+                    (CStringCharacterSequence))))))))))
   (Output
     (OutOfBandRecord
       (AsyncRecord
@@ -648,13 +739,15 @@ Test
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))))))
+                  (CString
+                    (CStringCharacterSequence)))))))))
     (OutOfBandRecord
       (AsyncRecord
         (NotifyAsyncOutput
@@ -665,13 +758,15 @@ Test
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))))))
+                  (CString
+                    (CStringCharacterSequence)))))))))
     (OutOfBandRecord
       (AsyncRecord
         (NotifyAsyncOutput
@@ -687,37 +782,43 @@ Test
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
@@ -725,35 +826,43 @@ Test
                       (List
                         (Value
                           (Const
-                            (CString))))))
+                            (CString
+                              (CStringCharacterSequence)))))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString)))))))))))
+                        (CString
+                          (CStringCharacterSequence))))))))))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (LogStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)
+            (CStringCharacterSequence)
             (CStringEscapeSequence)
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (AsyncRecord
@@ -765,31 +874,36 @@ Test
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
@@ -802,13 +916,15 @@ Test
                           (Identifier))
                         (Value
                           (Const
-                            (CString))))
+                            (CString
+                              (CStringCharacterSequence)))))
                       (Result
                         (Variable
                           (Identifier))
                         (Value
                           (Const
-                            (CString)))))))))))))
+                            (CString
+                              (CStringCharacterSequence))))))))))))))
     (ResultRecord
       (Token)
       (ResultClass))
@@ -822,12 +938,14 @@ Test
                 (Identifier))
               (Value
                 (Const
-                  (CString)))))))))
+                  (CString
+                    (CStringCharacterSequence))))))))))
   (Output
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (AsyncRecord
@@ -839,31 +957,36 @@ Test
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
@@ -876,13 +999,15 @@ Test
                           (Identifier))
                         (Value
                           (Const
-                            (CString))))
+                            (CString
+                              (CStringCharacterSequence)))))
                       (Result
                         (Variable
                           (Identifier))
                         (Value
                           (Const
-                            (CString)))))))))))))
+                            (CString
+                              (CStringCharacterSequence))))))))))))))
     (OutOfBandRecord
       (AsyncRecord
         (NotifyAsyncOutput
@@ -898,55 +1023,64 @@ Test
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
@@ -954,19 +1088,22 @@ Test
                       (List
                         (Value
                           (Const
-                            (CString))))))
+                            (CString
+                              (CStringCharacterSequence)))))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString)))))))))))
+                        (CString
+                          (CStringCharacterSequence))))))))))))
     (OutOfBandRecord
       (AsyncRecord
         (NotifyAsyncOutput
@@ -982,55 +1119,64 @@ Test
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
@@ -1038,19 +1184,22 @@ Test
                       (List
                         (Value
                           (Const
-                            (CString))))))
+                            (CString
+                              (CStringCharacterSequence)))))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString)))))))))))
+                        (CString
+                          (CStringCharacterSequence))))))))))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
@@ -1060,12 +1209,15 @@ Test
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (LogStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (AsyncRecord
@@ -1077,19 +1229,22 @@ Test
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
@@ -1100,13 +1255,15 @@ Test
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
@@ -1119,102 +1276,122 @@ Test
                                 (Identifier))
                               (Value
                                 (Const
-                                  (CString))))
+                                  (CString
+                                    (CStringCharacterSequence)))))
                             (Result
                               (Variable
                                 (Identifier))
                               (Value
                                 (Const
-                                  (CString)))))))))
+                                  (CString
+                                    (CStringCharacterSequence))))))))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString)))))))
+                        (CString
+                          (CStringCharacterSequence))))))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString)))))))))
+                  (CString
+                    (CStringCharacterSequence))))))))))
   (Output
     (OutOfBandRecord
       (StreamRecord
         (LogStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)
+            (CStringCharacterSequence)
             (CStringEscapeSequence)
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (ResultRecord
       (ResultClass)))
@@ -1236,43 +1413,50 @@ Test
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString)))))))
+                        (CString
+                          (CStringCharacterSequence))))))))
             (Result
               (Variable
                 (Identifier))
@@ -1283,43 +1467,50 @@ Test
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString)))))))
+                        (CString
+                          (CStringCharacterSequence))))))))
             (Result
               (Variable
                 (Identifier))
@@ -1330,43 +1521,50 @@ Test
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString)))))))
+                        (CString
+                          (CStringCharacterSequence))))))))
             (Result
               (Variable
                 (Identifier))
@@ -1377,43 +1575,50 @@ Test
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString)))))))
+                        (CString
+                          (CStringCharacterSequence))))))))
             (Result
               (Variable
                 (Identifier))
@@ -1424,43 +1629,50 @@ Test
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString)))))))
+                        (CString
+                          (CStringCharacterSequence))))))))
             (Result
               (Variable
                 (Identifier))
@@ -1471,25 +1683,29 @@ Test
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString)))))))
+                        (CString
+                          (CStringCharacterSequence))))))))
             (Result
               (Variable
                 (Identifier))
@@ -1500,43 +1716,50 @@ Test
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString)))))))
+                        (CString
+                          (CStringCharacterSequence))))))))
             (Result
               (Variable
                 (Identifier))
@@ -1547,25 +1770,29 @@ Test
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))
+                        (CString
+                          (CStringCharacterSequence)))))
                   (Result
                     (Variable
                       (Identifier))
                     (Value
                       (Const
-                        (CString))))))))))))
+                        (CString
+                          (CStringCharacterSequence)))))))))))))
   (Output
     (ResultRecord
       (ResultClass)
@@ -1581,25 +1808,29 @@ Test
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))))
+                      (CString
+                        (CStringCharacterSequence)))))))
             (Value
               (Tuple
                 (Result
@@ -1607,25 +1838,29 @@ Test
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))))
+                      (CString
+                        (CStringCharacterSequence)))))))
             (Value
               (Tuple
                 (Result
@@ -1633,25 +1868,29 @@ Test
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))))
+                      (CString
+                        (CStringCharacterSequence)))))))
             (Value
               (Tuple
                 (Result
@@ -1659,25 +1898,29 @@ Test
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))))
+                      (CString
+                        (CStringCharacterSequence)))))))
             (Value
               (Tuple
                 (Result
@@ -1685,25 +1928,29 @@ Test
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))))
+                      (CString
+                        (CStringCharacterSequence)))))))
             (Value
               (Tuple
                 (Result
@@ -1711,25 +1958,29 @@ Test
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString)))))))))))
+                      (CString
+                        (CStringCharacterSequence))))))))))))
   (Output
     (ResultRecord
       (ResultClass)
@@ -1740,223 +1991,296 @@ Test
           (List
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
                 (CString)))
@@ -1977,580 +2301,771 @@ Test
                 (CString)))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
                 (CString)))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString)))
+                (CString
+                  (CStringCharacterSequence))))
             (Value
               (Const
-                (CString))))))))
+                (CString
+                  (CStringCharacterSequence)))))))))
   (Output
     (ResultRecord
       (ResultClass)
@@ -2559,7 +3074,8 @@ Test
           (Identifier))
         (Value
           (Const
-            (CString))))))
+            (CString
+              (CStringCharacterSequence)))))))
   (Output
     (ResultRecord
       (ResultClass)
@@ -2575,13 +3091,15 @@ Test
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))))
+                      (CString
+                        (CStringCharacterSequence)))))))
             (Value
               (Tuple
                 (Result
@@ -2589,13 +3107,15 @@ Test
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))))
+                      (CString
+                        (CStringCharacterSequence)))))))
             (Value
               (Tuple
                 (Result
@@ -2603,13 +3123,15 @@ Test
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))))
+                      (CString
+                        (CStringCharacterSequence)))))))
             (Value
               (Tuple
                 (Result
@@ -2617,13 +3139,15 @@ Test
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString)))))))))))
+                      (CString
+                        (CStringCharacterSequence))))))))))))
   (Output
     (ResultRecord
       (Token)
@@ -2640,13 +3164,15 @@ Test
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))))
+                      (CString
+                        (CStringCharacterSequence)))))))
             (Value
               (Tuple
                 (Result
@@ -2654,13 +3180,15 @@ Test
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))))
+                      (CString
+                        (CStringCharacterSequence)))))))
             (Value
               (Tuple
                 (Result
@@ -2668,13 +3196,15 @@ Test
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))))
+                      (CString
+                        (CStringCharacterSequence)))))))
             (Value
               (Tuple
                 (Result
@@ -2682,13 +3212,15 @@ Test
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))))
+                      (CString
+                        (CStringCharacterSequence)))))))
             (Value
               (Tuple
                 (Result
@@ -2696,23 +3228,27 @@ Test
                     (Identifier))
                   (Value
                     (Const
-                      (CString))))
+                      (CString
+                        (CStringCharacterSequence)))))
                 (Result
                   (Variable
                     (Identifier))
                   (Value
                     (Const
-                      (CString)))))))))))
+                      (CString
+                        (CStringCharacterSequence))))))))))))
   (Output
     (OutOfBandRecord
       (StreamRecord
         (LogStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (AsyncRecord
@@ -2724,13 +3260,15 @@ Test
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))))))
+                  (CString
+                    (CStringCharacterSequence)))))))))
     (OutOfBandRecord
       (AsyncRecord
         (NotifyAsyncOutput
@@ -2741,11 +3279,13 @@ Test
                 (Identifier))
               (Value
                 (Const
-                  (CString))))))))
+                  (CString
+                    (CStringCharacterSequence)))))))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (AsyncRecord
@@ -2757,25 +3297,29 @@ Test
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))))))
+                  (CString
+                    (CStringCharacterSequence)))))))))
     (OutOfBandRecord
       (AsyncRecord
         (NotifyAsyncOutput
@@ -2786,25 +3330,29 @@ Test
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))))))
+                  (CString
+                    (CStringCharacterSequence)))))))))
     (ResultRecord
       (ResultClass)))
   (Output
@@ -2812,11 +3360,13 @@ Test
       (StreamRecord
         (LogStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (StreamRecord
         (ConsoleStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (ResultRecord
       (ResultClass)))
@@ -2825,6 +3375,7 @@ Test
       (StreamRecord
         (LogStreamOutput
           (CString
+            (CStringCharacterSequence)
             (CStringEscapeSequence)))))
     (OutOfBandRecord
       (AsyncRecord
@@ -2836,10 +3387,12 @@ Test
                 (Identifier))
               (Value
                 (Const
-                  (CString))))
+                  (CString
+                    (CStringCharacterSequence)))))
             (Result
               (Variable
                 (Identifier))
               (Value
                 (Const
-                  (CString))))))))))
+                  (CString
+                    (CStringCharacterSequence)))))))))))

@@ -74,7 +74,7 @@ enum {
   anon_sym_U_DQUOTE = 47,
   anon_sym_u8_DQUOTE = 48,
   anon_sym_DQUOTE = 49,
-  aux_sym_CString_token1 = 50,
+  sym_CStringCharacterSequence = 50,
   sym_CStringEscapeSequence = 51,
   sym_Stream = 52,
   sym_Output = 53,
@@ -156,7 +156,7 @@ static const char * const ts_symbol_names[] = {
   [anon_sym_U_DQUOTE] = "U\"",
   [anon_sym_u8_DQUOTE] = "u8\"",
   [anon_sym_DQUOTE] = "\"",
-  [aux_sym_CString_token1] = "CString_token1",
+  [sym_CStringCharacterSequence] = "CStringCharacterSequence",
   [sym_CStringEscapeSequence] = "CStringEscapeSequence",
   [sym_Stream] = "Stream",
   [sym_Output] = "Output",
@@ -238,7 +238,7 @@ static const TSSymbol ts_symbol_map[] = {
   [anon_sym_U_DQUOTE] = anon_sym_U_DQUOTE,
   [anon_sym_u8_DQUOTE] = anon_sym_u8_DQUOTE,
   [anon_sym_DQUOTE] = anon_sym_DQUOTE,
-  [aux_sym_CString_token1] = aux_sym_CString_token1,
+  [sym_CStringCharacterSequence] = sym_CStringCharacterSequence,
   [sym_CStringEscapeSequence] = sym_CStringEscapeSequence,
   [sym_Stream] = sym_Stream,
   [sym_Output] = sym_Output,
@@ -470,9 +470,9 @@ static const TSSymbolMetadata ts_symbol_metadata[] = {
     .visible = true,
     .named = false,
   },
-  [aux_sym_CString_token1] = {
-    .visible = false,
-    .named = false,
+  [sym_CStringCharacterSequence] = {
+    .visible = true,
+    .named = true,
   },
   [sym_CStringEscapeSequence] = {
     .visible = true,
@@ -3756,7 +3756,7 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
       ACCEPT_TOKEN(anon_sym_DQUOTE);
       END_STATE();
     case 526:
-      ACCEPT_TOKEN(aux_sym_CString_token1);
+      ACCEPT_TOKEN(sym_CStringCharacterSequence);
       if (lookahead == '\t' ||
           lookahead == '\r' ||
           lookahead == ' ') ADVANCE(526);
@@ -3766,7 +3766,7 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
           lookahead != '\\') ADVANCE(527);
       END_STATE();
     case 527:
-      ACCEPT_TOKEN(aux_sym_CString_token1);
+      ACCEPT_TOKEN(sym_CStringCharacterSequence);
       if (lookahead != 0 &&
           lookahead != '\n' &&
           lookahead != '"' &&
@@ -4888,7 +4888,7 @@ static const uint16_t ts_small_parse_table[] = {
     ACTIONS(202), 1,
       anon_sym_DQUOTE,
     ACTIONS(204), 1,
-      aux_sym_CString_token1,
+      sym_CStringCharacterSequence,
     ACTIONS(206), 1,
       sym_CStringEscapeSequence,
     STATE(52), 1,
@@ -4897,7 +4897,7 @@ static const uint16_t ts_small_parse_table[] = {
     ACTIONS(208), 1,
       anon_sym_DQUOTE,
     ACTIONS(210), 1,
-      aux_sym_CString_token1,
+      sym_CStringCharacterSequence,
     ACTIONS(212), 1,
       sym_CStringEscapeSequence,
     STATE(51), 1,
@@ -4923,14 +4923,14 @@ static const uint16_t ts_small_parse_table[] = {
     ACTIONS(227), 1,
       anon_sym_DQUOTE,
     ACTIONS(229), 1,
-      aux_sym_CString_token1,
+      sym_CStringCharacterSequence,
     ACTIONS(231), 1,
       sym_CStringEscapeSequence,
     STATE(46), 1,
       aux_sym_CString_repeat1,
   [1180] = 4,
     ACTIONS(204), 1,
-      aux_sym_CString_token1,
+      sym_CStringCharacterSequence,
     ACTIONS(206), 1,
       sym_CStringEscapeSequence,
     ACTIONS(233), 1,
@@ -4941,7 +4941,7 @@ static const uint16_t ts_small_parse_table[] = {
     ACTIONS(235), 1,
       anon_sym_DQUOTE,
     ACTIONS(237), 1,
-      aux_sym_CString_token1,
+      sym_CStringCharacterSequence,
     ACTIONS(240), 1,
       sym_CStringEscapeSequence,
     STATE(52), 1,

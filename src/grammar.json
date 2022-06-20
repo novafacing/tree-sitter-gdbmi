@@ -647,15 +647,8 @@
             "type": "CHOICE",
             "members": [
               {
-                "type": "IMMEDIATE_TOKEN",
-                "content": {
-                  "type": "PREC",
-                  "value": 1,
-                  "content": {
-                    "type": "PATTERN",
-                    "value": "[^\\\\\"\\n]+"
-                  }
-                }
+                "type": "SYMBOL",
+                "name": "CStringCharacterSequence"
               },
               {
                 "type": "SYMBOL",
@@ -669,6 +662,17 @@
           "value": "\""
         }
       ]
+    },
+    "CStringCharacterSequence": {
+      "type": "IMMEDIATE_TOKEN",
+      "content": {
+        "type": "PREC",
+        "value": 1,
+        "content": {
+          "type": "PATTERN",
+          "value": "[^\\\\\"\\n]+"
+        }
+      }
     },
     "CStringEscapeSequence": {
       "type": "TOKEN",

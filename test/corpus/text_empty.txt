@@ -1,0 +1,20 @@
+================================================================================
+Test
+================================================================================
+0^error,msg="No breakpoint number 1."
+(gdb)
+
+--------------------------------------------------------------------------------
+
+(Stream
+  (Output
+    (ResultRecord
+      (Token)
+      (ResultClass)
+      (Result
+        (Variable
+          (Identifier))
+        (Value
+          (Const
+            (CString
+              (CStringCharacterSequence))))))))
